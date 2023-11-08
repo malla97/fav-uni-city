@@ -29,6 +29,9 @@ main {
 .unies {
     height: calc(100vh - var(--header-height));
     background-color: lightcoral;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .data {
@@ -54,4 +57,57 @@ header > h2 {
     flex-direction: row;
     gap: 50px;
     margin-right: 5px;
+}
+
+.city-cards {
+    display: flex;
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+    scrollbar-color: transparent;
+    transition: scroll 0.3s ease-in-out;
+    gap: 30px;
+    justify-content: center;
+}
+
+.city-cards-inner {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    width: 800px;
+    transition: transform 0.45s ease;
+}
+
+.city-card {
+    height: 200px;
+    min-width: 150px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 15%;
+    background-color: darkcyan;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;  
+}
+
+.city-card > p {
+    margin-top: 5px;
+    margin-bottom: 40px;
+}
+
+.div-buttons {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.div-buttons > button {
+    border-radius: 50%;
+    border: 2px solid grey;
+    height: 40px;
+    width: 40px;
+    background-color: transparent;
+    cursor: pointer;
 }
