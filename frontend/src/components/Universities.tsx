@@ -1,16 +1,25 @@
 import React from "react";
-import {City} from "./City";
+import citiesData from "./cities.json";
+import { City } from "./City";
 
-const tampere = new City("Tampere", 61.49911, 23.78712)
-tampere.displayInfo();
+
 
 const Universities: React.FC = () => {
+  
+  const cities: City[] = citiesData.map((data: { name: string; latitude: number; longitude: number; }) => new City(data.name, data.latitude, data.longitude));
+
   return (
     <div className="unies">
-      <h1>Welcome to the Universities app!</h1>
-      <h5>{tampere.name}</h5>
-      <h5>{tampere.latitude}</h5>
-      <h5>{tampere.longitude}</h5>
+      <h1>Welcome welcome!</h1>
+      <div className="city-cards">
+        {cities.map((city, index) => (
+          <div key={index} className="city-card">
+            <h2>{city.name}</h2>
+            <p>Latitude: {city.latitude}</p>
+            <p>Longitude: {city.longitude}</p>
+          </div>
+        ))}
+      </div>
     </div>
   );
 };
@@ -32,3 +41,9 @@ export default Universities;
  */
 
 /** WeatherAPI from Open-Meteo: https://open-meteo.com */
+
+/**
+ * <h5>{tampere.name}</h5>
+    <h5>{tampere.latitude}</h5>
+    <h5>{tampere.longitude}</h5>
+ */

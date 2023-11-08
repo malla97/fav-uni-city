@@ -1,0 +1,52 @@
+[
+    {
+      "name": "Tampere",
+      "latitude": 61.49911,
+      "longitude": 23.78712
+    },
+    {
+      "name": "Helsinki",
+      "latitude": 60.16952,
+      "longitude": 24.93545
+    },
+    {
+        "name": "Oulu",
+        "latitude": 65.01236,
+        "longitude": 25.46816
+    },
+    {
+        "name": "Turku",
+        "latitude": 60.45148,
+        "longitude": 22.26869
+    },
+    {
+        "name": "Jyväskylä",
+        "latitude": 62.24147,
+        "longitude": 25.72088
+    },
+    {
+        "name": "Vaasa",
+        "latitude": 63.096,
+        "longitude": 21.61577
+    },
+    {
+        "name": "Rovaniemi",
+        "latitude": 66.5,
+        "longitude": 25.71667
+    },
+    {
+        "name": "Kuopio",
+        "latitude": 62.89238,
+        "longitude": 27.67703
+    },
+    {
+        "name": "Lappeenranta",
+        "latitude": 61.0583,
+        "longitude": 28.1861
+    },
+    {
+        "name": "Joensuu",
+        "latitude": 62.60,
+        "longitude": 29.7639
+    }
+  ]

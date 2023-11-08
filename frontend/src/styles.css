@@ -5,7 +5,7 @@
 * {
     margin: 0;
     padding: 0;
-    outline: pink dashed 1px;
+    outline: blue dashed 1px;
 }
 
 body {
@@ -39,4 +39,19 @@ main {
 footer {
     height: 500px; /* muuta sit semmoseks mikä näyttää hyvältä */
     background-color: darkkhaki;
+}
+
+header {
+    justify-content: space-between;
+}
+
+header > h2 {
+    margin-left: 5px;
+}
+
+.header-container {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    margin-right: 5px;
 }
