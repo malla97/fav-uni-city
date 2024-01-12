@@ -1,4 +1,6 @@
-# weather-app
+# fav-uni-city
+
+At the moment the project is on ice, as im learning TypeScript from Scrimba. Will continue after that.
 
 A simple project to learn a little bit of typescript and flask. Also wanted to do a fullstack project as a test of skill.
 It started as a boring weather-app, but it might not have any weather data in it in the end. 
